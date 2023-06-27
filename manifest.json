@@ -29,11 +29,18 @@
     },
     "timeout": 120,
     "memory": 128,
-    "environment": {},
+    "environment": {"LOG_LEVEL": "DEBUG" },
     "runtime": "python3.8",
     "app": {
       "log_type": "time"
     }
   },
-  "datasets": {}
+  "datasets": {
+    "xto.aldo-lab-stream-time-app": { 
+      "permissions": [
+        "read",
+        "write"
+      ]
+    }
+  }
 }
